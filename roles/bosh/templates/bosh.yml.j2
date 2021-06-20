@@ -140,8 +140,8 @@ jobs:
 {% if bosh_iam_instance_profile is not none %}
       credentials_source: env_or_profile
 {% elif bosh_access_key_id is not none and bosh_secret_access_key is not none %}
-      access_key_id: {{ bosh_access_key_id }} # <--- Replace with AWS Access Key ID
-      secret_access_key: {{ bosh_secret_access_key }} # <--- Replace with AWS Secret Key
+      access_key_id: AKIA6ONPWXEEBIIHP6HW # <--- Replace with AWS Access Key ID
+      secret_access_key: 2qPZpbavl/xq0vj9lsOCg5Wu+oDq4ujiyV9NuYid # <--- Replace with AWS Secret Key
 {% endif %}
       region: {{ bosh_region }}
 {% elif  (provider == 'openstack') %}
